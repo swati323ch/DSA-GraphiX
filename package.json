@@ -5,6 +5,7 @@
   "Homepage": "https://algorithmvisualiser.github.io/algo",
   "dependencies": {
     "cra-template": "1.2.0",
+    "bable/plugin-proposal-private-property-in-object":"7.21.11",
     "d3": "^7.9.0",
     "html-to-image": "^1.11.11",
     "react": "^18.3.1",
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.2.0"
   }
 }
