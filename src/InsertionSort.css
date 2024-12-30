@@ -1,0 +1,131 @@
+.insertion-sort-container .highlight-text {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.insertion-sort-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #90caf9);
+  min-height: 74vh;
+  color: #2c3e50;
+  box-sizing: border-box;
+  height: 730px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.insertion-sort-container h1 {
+  color: #0e6a9c;
+  font-size: 47px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.insertion-sort-container #arrayInput {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 90vh;
+  height: 50px;
+  border: 1px solid #113f67;
+  background-color: rgb(230, 250, 253);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.insertion-sort-container button {
+  padding: 12px 20px;
+  font-size: 1.15em;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: #42a5f5;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.insertion-sort-container #visualization {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.insertion-sort-container .box {
+  width: 60px;
+  height: 60px;
+  background-color: #f4f4f4;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.insertion-sort-container .sorted {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border-color: #055808;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.insertion-sort-container .highlight {
+  background-color: #f39c12;
+  transform: scale(1.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pointer {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.pointer i-pointer::before,
+.pointer j-pointer::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  background-image: url('/src/assets/25637.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .insertion-sort-container .box {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+  }
+}

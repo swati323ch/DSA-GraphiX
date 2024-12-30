@@ -1,0 +1,44 @@
+
+.head {
+  margin-top: 10px;
+}
+
+/* Top font: Space Games Font
+   Link: https://www.fontspace.com/space-games-font-f104169 
+*/
+.content-box {
+  background-color: rgba(255, 243, 224, 0.8); 
+  color: #333333; 
+  border-radius: 10px;
+  margin: 110px 50px 90px 50px;
+  height: 500px;
+  max-width: 1100px;
+  padding: 60px;
+  font-weight: bolder;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.direct {
+  margin-top: 0px;
+  padding: 13px 50px;
+  font-size: 2rem;
+  color: #4facfe;
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.direct:hover {
+  background: #4facfe;
+  color: #ffffff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+  position: relative; 
+}
+svg {
+  z-index: 1; 
+  position: relative;
+}
+
+/* Line styles for SVGs */
+line {
+  fill: none;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Red lines animation */
+.red {
+  stroke: #ee2d77;
+  opacity: 100%;
+  stroke-width: 2.5;
+  animation: pulseRed 3s infinite ease-in-out;
+}
+
+/* Blue lines animation */
+.blue {
+  stroke: #06A1C4;
+  opacity: 1;
+  stroke-width: 2.5;
+  animation: pulseBlue 4s infinite ease-in-out;
+}
+
+/* Light-blue line animation */
+.light-blue {
+  stroke: #06A1C4;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 800;
+  animation: drawLightBlue 6s infinite ease-in-out;
+}
+
+/* Keyframes for pulsing red */
+@keyframes pulseRed {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Keyframes for pulsing blue */
+@keyframes pulseBlue {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Keyframes for drawing light-blue lines */
+@keyframes drawLightBlue {
+  0% {
+    stroke-dashoffset: 800;
+  }
+  50% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.p2 svg {
+  transform: (800px,400px); 
+  margin-left: 600px;
+}
+
+.p3 svg {
+  transform: scaleX(-1) translate(800px, 0px); 
+}
+.animated-background {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+
+}
+.animated-background svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: transparent;
+  position: absolute; 
+}

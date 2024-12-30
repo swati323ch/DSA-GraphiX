@@ -1,0 +1,238 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tree-visualizer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0px;
+  
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #90caf9);
+  min-height: 74vh;
+  color: #2c3e50;
+  box-sizing: border-box;
+  height: 730px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #008080; /* Teal */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Input Box and Download Button */
+.input-download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 880px;
+  gap: 20px; /* Space between input box and button */
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex: 1; /* Ensures input box takes up remaining space */
+  padding: 15px;
+  font-size: 1rem;
+  border: 3px solid #008080; /* Teal border */
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background */
+  color: #333;
+}
+
+.input-download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  margin-bottom: 20px;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 5px; 
+}
+
+.download-button {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.download-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.download-text {
+  font-size: 0.8rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.visualize-button,
+.bfs-button,
+.dfs-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.visualize-button {
+  background-color: #008080; /* Teal */
+}
+
+.visualize-button:hover {
+  background-color: #006666; /* Darker Teal */
+  transform: translateY(-3px);
+}
+
+.bfs-button,
+.dfs-button {
+  background-color: #FF7F50; /* Coral */
+}
+
+.bfs-button:hover,
+.dfs-button:hover {
+  background-color: #e56741; /* Darker Coral */
+  transform: translateY(-3px);
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 430px;
+  overflow: auto; /* Enable scrolling for large content */
+  border: 2px solid #008080; /* Teal border */
+  margin-top: 20px;
+  background-color: #ffffff; /* White background */
+  display: flex;
+  justify-content: center; /* Center the SVG content horizontally */
+  align-items: center; /* Center the SVG content vertically */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.tree-canvas {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  resize: none;
+}
+
+/* Tree circles and connections */
+.circle-group {
+  cursor: pointer;
+}
+
+.tree-circle {
+  fill: #ffe75d; /* Light Gold */
+  stroke: #fd6e3a; /* Coral */
+  stroke-width: 3px;
+  r: 30px; /* Circle size */
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.tree-circle:hover {
+  fill: #FFA500; /* Orange-like Gold */
+  stroke: #e56741; /* Dark Coral */
+}
+
+/* Highlighted circle */
+.highlighted-circle {
+  fill: #f86e55; /* Tomato */
+  stroke: #FF4500; /* Orange Red */
+  stroke-width: 4px;
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+/* BFS Queue Visualization */
+.queue-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.queue-title {
+  font-size: 1.5rem;
+  font-weight: 900; /* Maximum boldness */
+  color: rgb(15, 25, 35); /* Darker shade for more contrast */
+  text-shadow: 2px 2px 4px rgba(104, 101, 101, 0.5); /* Drop shadow for text */
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Spacing between elements */
+}
+
+.queue-inline-item {
+  display: inline-block;
+  background-color: green; /* Coral */
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.red-queue-item {
+  background-color: rgb(230, 29, 15); /* Red background for the highlighted element */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.traversal-result-container{
+  margin-top: 20px;
+}

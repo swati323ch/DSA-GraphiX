@@ -1,0 +1,272 @@
+/* General container styling */
+.graph-visualization-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #90caf9);
+  min-height: 74vh;
+  color: #2c3e50;
+  box-sizing: border-box;
+  height: 730px;
+  border-radius: 15px;
+  position: relative; 
+}
+
+.graph-visualization-container h1 {
+  align-self: center; 
+  color: #1e88e5;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.input-download-container{
+  display: grid;
+}
+/* Input field styling */
+.input-container {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 2000px;
+  height: 90px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #b0bec5;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+
+.input-container:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 12px rgba(66, 165, 245, 0.4);
+}
+.download-button {
+  position: relative;
+  display: inline-block;
+  width: 60px; 
+  height: 60px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.download-icon {
+  width: 100%; 
+  height: 100%;
+ 
+}
+
+.download-txt {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+.operation_button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff; 
+  border: none;
+  background-color: #42a5f5; 
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Hover effect */
+.operation_button:hover {
+  background-color: #1e88e5;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Active effect */
+.operation_button:active {
+  background-color: #1565c0;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+.operation-button-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-top:50px;
+}
+.graphdislpay-button-wraper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Error message styling */
+.error-message {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  width: 70%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Graph display container */
+.graph-display {
+  align-self: flex-end;
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+/* SVG styling */
+svg {
+  background-color: #ffffff;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+}
+circle {
+  fill:white;
+  stroke: #333536;
+  /*fill: #42a5f5;
+  stroke: #1e88e5;*/
+  stroke-width: 2.4px; 
+}
+
+
+/* Node text*/
+text {
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none; 
+  fill: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Links (edges)*/
+line {
+  stroke: #333536;
+  stroke-width: 2px;
+  transition: stroke 0.3s ease;
+}
+
+/* Directed edge arrowhead */
+marker#arrowhead {
+  fill: black;
+  stroke: none;
+}
+
+/* Button container */
+.button-container {
+  align-self: center; 
+  display: grid;
+
+  gap: 15px;
+  margin-bottom: 10px;
+  justify-content: center;
+
+}
+
+/* Toggle button */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e0e0e0;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #42a5f5;
+  color: white;
+  border-color: #1e88e5;
+}
+
+.toggle-button:hover {
+  background-color: #64b5f6;
+  color: white;
+  border-color: #2196f3;
+}
+.node.highlighted {
+  fill: yellow;
+  stroke: red;
+  stroke-width: 3px;
+}
+.operation-result{
+  margin-left:0px;
+  margin-top:50px;
+  align-self:flex-start;
+  display:inline-flex;
+}
+.node {
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.highlighted {
+  background-color: red; 
+  color: white; 
+}
+.mst-highlight {
+  stroke: #ff5722; 
+  stroke-width: 4px; 
+}
+
+
+@media (max-width: 768px) {
+  .graph-visualization-container {
+    padding: 10px;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+
+  .error-message {
+    width: 95%;
+  }
+
+  .graph-display {
+    height: 300px;
+  }
+
+  .toggle-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
