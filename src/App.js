@@ -38,11 +38,11 @@ const Visualizer = () => {
         <div className="navbar">
       </div>
       <div className="algorithm-buttons">
-        <div className="dropdown">
+      <div className="dropdown">
           <button className="nav-button">Sorting Algorithms</button>
           <div className="dropdown-content">
-            <button className="dropdown-item" onClick={() => showSorting('bubble')}>Bubble Sort</button>
-            <button className="dropdown-item" onClick={() => showSorting('insertion')}>Insertion Sort</button>
+            <a href="#" onClick={() => showSorting('bubble')}>Bubble Sort</a>
+            <a href="#" onClick={() => showSorting('insertion')}>Insertion Sort</a>
           </div>
         </div>
         <button className="nav-button" onClick={() => setVisualizationType('tree')}>Tree Visualization</button>

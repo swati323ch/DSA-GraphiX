@@ -115,7 +115,7 @@
   width: 88vw;
   transform: translate(-15%, 0%);
   max-width: 2500px;
-  height:730px;
+  height:720px;
   padding: 30px;
   text-align: center;
   /*background: radial-gradient(circle at 10% 10%, rgb(213, 231, 245) 0%, transparent 100%);*/
@@ -166,6 +166,25 @@
   font-weight: bold;
   color: #444;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-item {
+  color: #333; /* Neutral text color */
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto', sans-serif; /* Clean and modern font */
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  border-radius: 4px; /* Slightly rounded edges */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
