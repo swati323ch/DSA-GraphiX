@@ -1,6 +1,5 @@
 # DSA Visualiser
-
-GraphiX DSA is an interactive  tool designed to visualize DSA in an engaging manner. This project aims to enhance understanding of fundamental DSA concepts by providing visual demonstrations. .DSAGraphiX allows users to input their own data, enabling of visualizations accordingly.
+GraphiX DSA is an interactive tool designed to visualize algorithms. This project aims to enhance understanding of fundamental DSA concepts by providing visual demonstrations. It allows users to input their own data, enabling of visualizations accordingly.
 
 ![image](https://github.com/user-attachments/assets/954b05a1-e179-46da-bea2-1df9a454b406)
 
@@ -22,7 +21,7 @@ The website provides visualizations of tree traversal techniques include:
 ### Graph Algorithms
 ![image](https://github.com/user-attachments/assets/86de51aa-7221-4e2e-8384-17e6d33a4a34)
 
-It also supports visualization of graph algorithms for both directed and undirected graphs. These include:
+It also supports visualization of graph algorithms for both directed and undirected graphs. These include -
 
 - B-First Search (BFS) and Depth-First Search (DFS) for exploring graph structures.
 - Topological Sort for directed acyclic graphs.
