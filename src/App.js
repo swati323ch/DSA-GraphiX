@@ -34,7 +34,8 @@ const Visualizer = () => {
 
   return (
     <div className="App">
-      <div className="navbar">
+      <div>
+        <div className="navbar">
       </div>
       <div className="algorithm-buttons">
         <div className="dropdown">
@@ -56,8 +57,10 @@ const Visualizer = () => {
         {visualizationType === 'graph' && <GraphVisualization />}
         {visualizationType === 'tree' && <TreeVisualisation />}
       </div>
+      
       <img id="bottom-right-image" src={rightImage} />
 
+      </div>
     </div>
   );
 };

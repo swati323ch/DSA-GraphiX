@@ -14,7 +14,8 @@ const MainPage = () => {
   };
 
   return (
-    <div className="mp">
+    <div className ="contain">
+      <div className="mp">
       <Background />
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/ch-swati/" target="_blank" rel="noopener noreferrer">
@@ -33,6 +34,7 @@ const MainPage = () => {
       <button className="direct" onClick={handleVisualizerClick}>
         Get Started
       </button>
+    </div>
     </div>
   );
 };

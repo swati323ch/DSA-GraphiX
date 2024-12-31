@@ -1,8 +1,11 @@
 
+
 .head {
   margin-top: 70px;
 }
-
+.contain{
+  transform: scale(0.8);
+}
 /* Top font: Space Games Font
    Link: https://www.fontspace.com/space-games-font-f104169 
 */
@@ -40,15 +43,15 @@
 }
 .social-icons {
   position: absolute;
-  top: 40px;
-  left: 30px;
+  top: 0px;
+  left: -270px;
   display: flex;
-  gap: 15px; /* Space between icons */
+  gap: 20px; /* Space between icons */
   align-items: center;
 }
 
 .social-icons .icon {
-  font-size: 58px;
+  font-size: 70px;
   color: #ffffff; 
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
