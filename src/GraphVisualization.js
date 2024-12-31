@@ -793,7 +793,7 @@ useEffect(() => {
             }
             style={{ marginLeft: "10px" }}
           />
-          <button onClick={findShortestPath}>Get Path</button>
+          <button className = "getpath" onClick={findShortestPath}>Get Path</button>
         </>
       )}
     </div>
@@ -821,7 +821,7 @@ useEffect(() => {
             alignItems: "flex-end",
             overflow: "auto",
             maxWidth: "69%",
-            height: "450px"
+            height: "410px"
           }}
         >
           <svg ref={svgRef} width="1000" height="450" style={{ border: "1px solid black" }}></svg>

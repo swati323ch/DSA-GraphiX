@@ -142,6 +142,44 @@
   height: 370px;
   overflow: auto;
 }
+.getpath{
+  padding: 6px 13px;
+  margin-top:10px;
+  font-weight: bold;
+  color: #ffffff; 
+  border: none;
+  background-color: #00ab1c; 
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.shortestpathop {
+  padding: 0px 10px;
+  width: 100%;
+  max-width: 172px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shortestpathop::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.shortestpathop:focus {
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.shortestpathop:hover {
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 /* SVG styling */
 svg {
   background-color: #ffffff;
