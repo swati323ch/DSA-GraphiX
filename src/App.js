@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import './InsertionSort.css';
@@ -39,8 +39,8 @@ const Visualizer = () => {
         <div className="dropdown">
           <button className="nav-button">Sorting Algorithms</button>
           <div className="dropdown-content">
-            <a href="#" onClick={() => showSorting('bubble')}>Bubble Sort</a>
-            <a href="#" onClick={() => showSorting('insertion')}>Insertion Sort</a>
+            <button className="dropdown-item" onClick={() => showSorting('bubble')}>Bubble Sort</button>
+            <button className="dropdown-item" onClick={() => showSorting('insertion')}>Insertion Sort</button>
           </div>
         </div>
         <button className="nav-button" onClick={() => setVisualizationType('tree')}>Tree Visualization</button>
@@ -55,15 +55,12 @@ const Visualizer = () => {
         {visualizationType === 'graph' && <GraphVisualization />}
         {visualizationType === 'tree' && <TreeVisualisation />}
       </div>
-      <img id="bottom-right-image" src="/assets/image.svg" alt="Bottom Right Image" />
-      
+      <img id="bottom-right-image" src="/assets/image.svg" alt="Bottom Right" />
     </div>
   );
 };
 
 export default App;
-
-
 
 
 /*
