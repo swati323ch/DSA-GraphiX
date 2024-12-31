@@ -10,6 +10,7 @@ import BubbleSort from './BubbleSort';
 import GraphVisualization from './GraphVisualization';
 import TreeVisualisation from './TreeVisualisation';
 import MainPage from './mainpage';
+import rightImage from './assets/image.svg';
 
 const App = () => {
   return (
@@ -55,7 +56,8 @@ const Visualizer = () => {
         {visualizationType === 'graph' && <GraphVisualization />}
         {visualizationType === 'tree' && <TreeVisualisation />}
       </div>
-      <img id="bottom-right-image" src="/assets/image.svg" alt="Bottom Right" />
+      <img id="bottom-right-image" src={rightImage} />
+
     </div>
   );
 };

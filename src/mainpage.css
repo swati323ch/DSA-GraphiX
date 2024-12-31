@@ -1,6 +1,6 @@
 
 .head {
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 /* Top font: Space Games Font
@@ -10,7 +10,7 @@
   background-color: rgba(255, 243, 224, 0.8); 
   color: #333333; 
   border-radius: 10px;
-  margin: 110px 50px 90px 50px;
+  margin: 50px 50px 70px 50px;
   height: 500px;
   max-width: 1100px;
   padding: 60px;
@@ -38,7 +38,27 @@
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.social-icons {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  display: flex;
+  gap: 15px; /* Space between icons */
+  align-items: center;
+}
 
-button:focus {
-  outline: none;
+.social-icons .icon {
+  font-size: 58px;
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 8px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease; 
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #0077b5; 
 }
